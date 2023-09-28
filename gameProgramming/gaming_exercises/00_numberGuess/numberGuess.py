@@ -34,8 +34,8 @@ print("""
 
 
 # CPU SECRET NUMBER GENERATION
-secretNumber = random.randit(0, 20)
-print(secretnumber)
+secretNumber = random.randit(0, 20) # CODE CRASHES IMMEDIATELY ON THIS LINE, INDICATES NO TESTING COMPLETED. 
+print(secretnumber) # Match camelCase on variable names. 
  
 # GAME LOOP
 print("you need to guess a number from 0 to 20 and you have four guesses. \nIf you guess it right, you")
@@ -47,3 +47,5 @@ while playerScore != 3 or cpuScore != 3:
         print(f"you have {4 - numGuesses} guesses remaining.\n")
         playerGuess = input("type a number from 0 to 20 and push ENTER.\n")
         print(f"you have chosen {playerGuess}. Let's see if you're right! \n")
+
+# CODE NOT COMPLETED 
