@@ -34,6 +34,14 @@ print("""
      """)
 
 
+playerName = input("what should i call you?\nType your name and press enter.\n")
+# VERIFY INPUT WHENEVER POSSIBLE!
+print(f"you want me to call you {playerName}. Is that correct?")
+isCorrect = input("please type yes if correct, no if not correct.\n")
+if isCorrect == "yes":
+    print(f"ok {playerName}, let's continue!")
+else:
+    playerName = input("what should i call you?\nType your name and press enter.\n")   
 
 # CPU SECRET NUMBER GENERATION
 secretNumber = random.randit(0, 20)
