@@ -74,7 +74,7 @@ HANGMAN_BOARD = ['''
 # Pick a word from the dictionary
 def getRandomWord(wordDict): # Return a random word from the list.
     wordKey = random.choice(list(wordDict.keys()))
-    wordIndex = random.randint(0, len(wordDict[wordKey] - 1))
+    wordIndex = random.randint(0, len(wordDict[wordKey]) - 1)
     return [wordDict[wordKey][wordIndex], wordKey]
 
 def displayBoard(missedLetters, correctLetters, secretWord):
@@ -123,11 +123,11 @@ while difficulty not in 'EMH':
     print('Please Choose Easy, Easy, Meduim Hard. Type the first letter then press enter.\n')
     difficulty = input().upper()
 if difficulty == 'M': # Medium
-    del HANGMAN_BOARD[8]
     del HANGMAN_BOARD[7]
+    del HANGMAN_BOARD[6]
 if difficulty == 'H': # Hard
-    del HANGMAN_BOARD[8]
     del HANGMAN_BOARD[7]
+    del HANGMAN_BOARD[6]
     del HANGMAN_BOARD[5]
     del HANGMAN_BOARD[3]
 
