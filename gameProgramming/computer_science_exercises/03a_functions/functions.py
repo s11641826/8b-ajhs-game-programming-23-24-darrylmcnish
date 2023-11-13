@@ -120,7 +120,7 @@ print('Welcome to Hangman by Ryan K.')
 # CHOOSE DIFFICULTY
 difficulty = 'X'
 while difficulty not in 'EMH':
-    print('Please Choose Easy, Easy, Meduim Hard. Type the first letter then press enter.\n')
+    print('Please Choose Easy, Meduim, Hard. Type the first letter then press enter.\n')
     difficulty = input().upper()
 if difficulty == 'M': # Medium
     del HANGMAN_BOARD[7]
